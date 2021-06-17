@@ -14,16 +14,16 @@
 <body>
     
 <!---1. Colocamos la imagen ---->
-<img class="wave" src="../img/wave.png" alt="">
+<img class="wave" src="../img/wavee.png" alt="">
 <div class="contenedor">
     <div class="img">
-       <img src="../img/bg.svg" alt="">
+       <img src="../img/bgaa.svg" alt="">
     </div>
     <!--2. Aquí será el contenido del formulario --->
       <div class="contenido-login">
            <!---2.1. El formulario--->
            <form action="">
-               <img src="../img/logo.png" alt="">
+               <img src="../img/drogas.png" alt="">
                <!--- Titulo --->
                <h2>Farmacia</h2>
                 <div class="input-div dni">
