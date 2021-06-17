@@ -22,7 +22,7 @@
     <!--2. Aquí será el contenido del formulario --->
       <div class="contenido-login">
            <!---2.1. El formulario--->
-           <form action="">
+           <form action="../controlador/LoginController.php" method="POST">
                <img src="../img/drogas.png" alt="">
                <!--- Titulo --->
                <h2>Farmacia</h2>
