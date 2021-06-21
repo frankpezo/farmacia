@@ -18,7 +18,7 @@ session_start();
  if(!empty($_SESSION['us_tipo'])){
         header('Location:../controlador/LoginController.php');//Si existe una función en curso, nos mandará aquí
  }else{
-
+    session_destroy();//Eliminamos en caso no haya ninguna sesión en curso. 
  
 ?>
 

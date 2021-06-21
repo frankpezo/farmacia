@@ -17,10 +17,20 @@ $usuario = new Usuario();
 
 
 if(!empty($_SESSION['us_tipo'])){
+    
+        //Hacemos un switch para verificar qué tipo de usuario inicio sesión
+        switch($_SESSION['us_tipo']){
+            case 1: 
+                 header('Location:../vista/adm_catalogo.php');
+                 break;
+    
+            case 2:
+                header('Location:../vista/tec_catalogo.php');
+                break;  
+        }
 
 }else{
-    $usuario->Loguearse($user,$pass);//Para que el usuario se loguee xd
-    
+    $usuario->Loguearse($user,$pass);
     //Hacemos un if para saber qué rol tiene el usuario(si es administrador o tiene otro rol )
 if(!empty($usuario->objetos)){
            
