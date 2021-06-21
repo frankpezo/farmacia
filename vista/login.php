@@ -11,6 +11,17 @@
 
     <title>Inicio de sesión</title>
 </head>
+
+<?php
+session_start();
+
+ if(!empty($_SESSION['us_tipo'])){
+        header('Location:../controlador/LoginController.php');//Si existe una función en curso, nos mandará aquí
+ }else{
+
+ 
+?>
+
 <body>
     
 <!---1. Colocamos la imagen ---->
@@ -58,3 +69,8 @@
 
 <script src="../js/login.js"></script>
 </html>
+<?php
+
+ }
+ 
+?>
