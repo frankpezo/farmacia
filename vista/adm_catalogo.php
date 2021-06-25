@@ -79,7 +79,7 @@ include_once('layouts/footer.php');
 
    }else{
         //Si no  el usuario no es administrador lo redericcionamos nuevamente al login. 
-        header('Location:../vista/login.php');
+        header('Location:../index.php');
    }
 
 ?>

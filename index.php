@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="stylesheet" type="text/css" href="../css/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
     <title>Inicio de sesión</title>
@@ -16,7 +16,7 @@
 session_start();
 
  if(!empty($_SESSION['us_tipo'])){
-        header('Location:../controlador/LoginController.php');//Si existe una función en curso, nos mandará aquí
+        header('Location:controlador/LoginController.php');//Si existe una función en curso, nos mandará aquí
  }else{
     session_destroy();//Eliminamos en caso no haya ninguna sesión en curso. 
  
@@ -25,16 +25,16 @@ session_start();
 <body>
     
 <!---1. Colocamos la imagen ---->
-<img class="wave" src="../img/wavee.png" alt="">
+<img class="wave" src="img/wavee.png" alt="">
 <div class="contenedor">
     <div class="img">
-       <img src="../img/bgaa.svg" alt="">
+       <img src="img/bgaa.svg" alt="">
     </div>
     <!--2. Aquí será el contenido del formulario --->
       <div class="contenido-login">
            <!---2.1. El formulario--->
-           <form action="../controlador/LoginController.php" method="POST">
-               <img src="../img/drogas.png" alt="">
+           <form action="controlador/LoginController.php" method="POST">
+               <img src="img/drogas.png" alt="">
                <!--- Titulo --->
                <h2>Farmacia</h2>
                 <div class="input-div dni">
@@ -67,7 +67,7 @@ session_start();
 </body>
 
 
-<script src="../js/login.js"></script>
+<script src="js/login.js"></script>
 </html>
 <?php
 

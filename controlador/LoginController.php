@@ -52,7 +52,7 @@ if(!empty($usuario->objetos)){
         }
     
     }else{
-        header('Location:../vista/login.php');//Para que nos retorno al mismo login si en caso no existe el usuario
+        header('Location:../index.php');//Para que nos retorno al mismo login si en caso no existe el usuario
     }
 }
 
