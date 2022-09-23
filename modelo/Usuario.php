@@ -25,6 +25,15 @@ class Usuario extends Conexion{
          return $this->objetos;
     }
 
+    //3.2. Creamos otro método
+    function obtener_datos($id){
+        $sql= "SELECT * FROM usuario JOIN tipo_us ON us_tipo=id_tipo_us AND id_usuario=:id";
+        $query= $this->acceso->prepare($sql);
+        $query->execute(array(':id'=>$id));
+        $this->objetos=  $query->fetchall();
+
+        return $this->objetos;
+   }
 
 
 

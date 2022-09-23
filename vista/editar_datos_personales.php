@@ -52,20 +52,23 @@
                                            <img src="../img/perfil.jpg" class="profile-user-img img-fluid img-circle">
                                       </div>
 
-                                      <h3 class="profile-username text-center text-info">Nombre</h3>
-                                      <p class="tex-muted text-center">Apellidos</p>
+                                      <!---Creamos un input --->
+                                      <input type="hidden" id="id_usuario" value="<?php echo $_SESSION['usuario']; ?>">
+
+                                      <h3 class="profile-username text-center text-info" id="nombre_us">Nombre</h3>
+                                      <p class="tex-muted text-center" id="apellido_us">Apellidos</p>
                                          <ul class="list-group list-group-unbordered mb-3">
                                               <li class="list-group-item">
-                                                  <b style="color:#4CC4B9">Edad</b><a  class="float-right">20</a>
+                                                  <b style="color:#4CC4B9" >Edad</b><a id="edad" class="float-right">20</a>
                                               </li>
 
                                               <li class="list-group-item">
-                                                  <b style="color:#4CC4B9">DNI</b><a  class="float-right">20</a>
+                                                  <b style="color:#4CC4B9" >DNI</b><a  id="dni_us" class="float-right">20</a>
                                               </li>
 
                                               <li class="list-group-item">
                                                   <b style="color:#4CC4B9">Tipo de usuario</b>
-                                                  <span class="float-right badge badge-primary">Administrador</span>
+                                                  <span class="float-right badge badge-primary" id="us_tipo">Administrador</span>
                                               </li>
 
                                           </ul>
@@ -83,27 +86,27 @@
                                           <strong style="color:#4CC4B9">
                                               <i class="fas fa-phone mr-1" ></i>Télefono
                                           </strong>
-                                          <p class="text-muted">9787799</p>
+                                          <p class="text-muted" id="telefono_us">9787799</p>
 
                                           <strong style="color:#4CC4B9">
                                               <i class="fas fa-map-marker-alt mr-1" ></i>Residencia
                                           </strong>
-                                          <p class="text-muted">9787799</p>
+                                          <p class="text-muted" id="residencia_us">9787799</p>
 
                                           <strong style="color:#4CC4B9">
                                               <i class="fas fa-at mr-1" ></i>Correo electrónico
                                           </strong>
-                                          <p class="text-muted">correoprueba@gmail.com</p>
+                                          <p class="text-muted" id="correo_us">correoprueba@gmail.com</p>
 
                                           <strong style="color:#4CC4B9">
                                               <i class="fas fa-smile-wink mr-1" ></i>Sexo
                                           </strong>
-                                          <p class="text-muted">Masculino</p>
+                                          <p class="text-muted" id="sexo_us">Masculino</p>
 
                                           <strong style="color:#4CC4B9">
                                               <i class="fas fa-pencil-alt mr-1" ></i>Información adicional
                                           </strong>
-                                          <p class="text-muted">Masculino</p>
+                                          <p class="text-muted" id="adicional_us">Adicional</p>
                                        
                                         <!----Colocamos un botón ------------------>
                                           <button class="btn btn-block bg-gradient-danger">Editar</button>
@@ -194,3 +197,4 @@ include_once('layouts/footer.php');
    }
 
 ?>
+<script src="../js/Usuario.js"></script>

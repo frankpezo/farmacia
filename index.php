@@ -58,7 +58,7 @@ session_start();
                       </div>
                 </div>
 
-                <a href="#">Crear Warpiece</a>
+                <a href="#">Crear Warpiece.</a>
                 <input type="submit" name="btn" class="btn" value="Iniciar Sesión">
            </form>
       </div>
